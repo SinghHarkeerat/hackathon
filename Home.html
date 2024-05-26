@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Sign Language Detection Model</title>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <style>
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+
+        }
+
+        .slider-container .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2438px;
+            height: 732px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            background-size: cover;
+        }
+
+
+        .slider-container .slide.active {
+            opacity: 1;
+        }
+
+        .page-heading {
+            margin-top: 160px;
+            margin-bottom: 30px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(assets/images/);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader" style="background-color: burlywood;">
+        <div class="jumper" style="background-color: burlywood;">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container" style="background: rgb(255, 255, 255);">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav" style="background: rgb(255, 255, 255);">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="./Home.html">Home</a></li>
+                            </section>
+                            <li class="scroll-to-section"><a href="https://www.lifeprint.com/dictionary.htm">ASL
+                                    Dictionary</a></li>
+                            <li class="scroll-to-section"><a href="Game.html">Game</a></li>
+                            <li class="scroll-to-section"><a href="about.html">About Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="page-heading" id="top">
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="inner-content">
+
+                        <h2 style="color: hsl(187, 63%, 52%)">Learn sign langauge</h2>
+                        <span> <a href="" style="color: rgb(255, 255, 255)">"Powered by Ai"</a></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+
+    
+
+    <!-- ***** Products Area Starts ***** -->
+    <section class="section" id="products">
+
+        <style>
+            .section-heading span {
+                text-align: justify;
+                text-justify: distribute-all-lines;
+            }
+        </style>
+
+        <section class="ftco-counter " id="section-counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9" style="padding-top: 50px;">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                                <div class="block-18 text-center">
+                                    <div class="text">
+                                        <a href="https://forms.gle/BzqntNZ2yAY7Uc1o7"
+                                            class="btn btn-white btn-outline-white"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                                <div class="block-18 text-center">
+                                    <div class="text">
+                                        <strong class="number" data-number="1"></strong>
+                                    </div>
+                                    <div class="text">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                                <div class="block-18 text-center">
+                                    <div class="text">
+                                        <strong class="number" data-number="1"></strong>
+                                    </div>
+                                    <div class="text">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                                <div class="block-18 text-center">
+                                    <div class="text">
+                                        <strong class="number" data-number="1"></strong>
+                                    </div>
+                                    <div class="text">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                                <div class="block-18 text-center">
+                                    <div class="text">
+                                        <strong class="number" data-number="10"></strong>
+                                    </div>
+                                    <div class="text">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                                <div class="block-18 text-center">
+                                    <div class="text">
+                                        <strong class="number" data-number="0"></strong>
+                                    </div>
+                                    <div class="text">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center pb-5">
+                        <div class="col-md-7 heading-section text-center">
+                            <h2></h2>
+                            <span class="subheading"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="justify-content: space-between" ;>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-center">
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- ***** Events Area Ends ***** -->
+    <!-- ***** Events Area Ends ***** -->
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+
+        $(function () {
+            var selectedClass = "";
+            $("p").click(function () {
+                selectedClass = $(this).attr("data-rel");
+                $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("." + selectedClass).fadeOut();
+                setTimeout(function () {
+                    $("." + selectedClass).fadeIn();
+                    $("#portfolio").fadeTo(50, 1);
+                }, 500);
+
+            });
+        });
+
+    </script>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 9000);
+        showSlide(currentSlide);</script>
+
+    <script>const pageHeading = document.querySelector('.page-heading');
+        pageHeading.classList.add('slide');
+    </script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        font-family: 'Exo', sans-serif, var(--font-main);
+        background: linear-gradient(to left, #8f94fb, #4e54c8);
+        -webkit-font-smoothing: antialiased;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Exo', sans-serif;
+    }
+
+    .context {
+        width: 100%;
+        position: absolute;
+        top: 50vh;
+    }
+
+    .context h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+    }
+
+    .area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .circles li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+    }
+
+    .circles li:nth-child(1) {
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+    }
+
+    .circles li:nth-child(2) {
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+    }
+
+    .circles li:nth-child(3) {
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+    }
+
+    .circles li:nth-child(4) {
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+    }
+
+    .circles li:nth-child(5) {
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+    }
+
+    .circles li:nth-child(6) {
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+    }
+
+    .circles li:nth-child(7) {
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+    }
+
+    .circles li:nth-child(8) {
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+    }
+
+    .circles li:nth-child(9) {
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+    }
+
+    .circles li:nth-child(10) {
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+
+        100% {
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 50%;
+        }
+    }
+
+    #heading {
+        position: relative;
+        top: 200px;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+        z-index: 2;
+        color: white;
+    }
+
+    :root {
+        --background: 266, 16%, 92%;
+        --text-primary: 0, 0%, 0%;
+        --black: 0, 0%, 0%;
+        --white: 0, 0%, 100%;
+        --red: 347, 84%, 68%;
+        --orange: 23, 84%, 68%;
+        --yellow: 52, 84%, 68%;
+        --green: 114, 84%, 68%;
+        --teal: 163, 84%, 68%;
+        --blue: 219, 84%, 68%;
+        --purple: 279, 84%, 68%;
+        --pink: 312, 84%, 68%;
+        --gradient: linear-gradient(90deg, hsla(var(--red), 1) 0%, hsla(var(--orange), 1) 12.5%, hsla(var(--yellow), 1) 25%, hsla(var(--green), 1) 37.5%, hsla(var(--teal), 1) 50%, hsla(var(--blue), 1) 62.5%, hsla(var(--blue), 1) 75%, hsla(var(--purple), 1) 87.5%, hsla(var(--pink), 1) 100%);
+        --paragraph: 1.11rem;
+        --transition-main: .175, .685, .32;
+        --font-main: "Poppins";
+    }
+
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .flexbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Button */
+    button {
+        padding: .8em 1.2em;
+        border: 1px solid hsl(var(--black));
+        background-color: var(--background);
+        font-size: var(--paragraph);
+        cursor: pointer;
+        outline: none;
+        z-index: 3;
+        position: relative;
+    }
+
+    button:focus {
+        box-shadow:
+            0 0 0 2px hsl(var(--black)),
+            0 0 0 3px hsl(var(--white));
+        border: 1px solid transparent;
+    }
+
+    .button,
+    .btn-secondary {
+        margin: 0;
+        width: 100%;
+        position: relative;
+        padding: 1.2em 2em;
+        letter-spacing: .025em;
+        color: hsl(var(--background));
+        font-size: var(--paragraph);
+        background: var(--gradient);
+        background-size: 500%;
+        border-radius: 5em;
+        border: none;
+        transform: scaleX(1);
+        transition: transform .3s cubic-bezier(var(--transition-main), 1.275), filter .3s cubic-bezier(var(--transition-main), 1.275), bottom .3s cubic-bezier(var(--transition-main), 1.275), background-position 7.5s cubic-bezier(var(--transition-main), .955);
+    }
+
+    .button {
+        transition: transform .3s cubic-bezier(var(--transition-main), 1.275), bottom .3s cubic-bezier(var(--transition-main), 1.275), background-position 17.5s cubic-bezier(var(--transition-main), .955);
+        margin: 20px;
+    }
+
+    .button,
+    .button .btn-secondary {
+        bottom: 0;
+        background-position: 0 50%;
+    }
+
+    .button .btn-secondary {
+        left: 0;
+        width: 100%;
+        position: absolute;
+        filter: blur(1rem);
+        transform: scale3d(.85, .95, 1);
+        transition: transform .3s cubic-bezier(var(--transition-main), 1.275), filter .3s cubic-bezier(var(--transition-main), 1.275), bottom .3s cubic-bezier(var(--transition-main), 1.275), background-position 7.5s cubic-bezier(var(--transition-main), .955), opacity 3s cubic-bezier(var(--transition-main), 1.275);
+        opacity: .5;
+        z-index: -1;
+    }
+
+    .button:focus {
+        outline: none;
+    }
+
+    .button:hover {
+        bottom: 2px;
+        transform: scale3d(1.1, 1.1, 1);
+        background-position: 100% 50%;
+        outline: none;
+    }
+
+    .btn-secondary,
+    .button:hover .btn-secondary {
+        bottom: -5px;
+        background-position: 100% 50%;
+        filter: blur(1.6rem);
+        opacity: .8;
+    }
+
+    .button ion-icon {
+        margin: 0 .5em .075em 0;
+    }
+</style>
+
+</body>
+
+</html>
