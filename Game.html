@@ -102,21 +102,29 @@
 
 
     <!-- ***** _____ Event Starts ***** -->
+
  
 
 
     <main class="flexbox">
         <div>
+            <h1 id="headersign">Practice Your Sign Language</h1>
             <button type="button" onclick="init()" class="button btn-primary flexbox" id="try_again" onclick="init()">
-                <ion-icon name="folder-open-outline"></ion-icon>Start Game<div class="btn-secondary"></div>
+                <ion-icon name="folder-open-outline"></ion-icon>Start Practice<div class="btn-secondary"></div>
             </button>
             <div id="webcam-container"></div>
                         <div id="predicted"> </div>
                     </span>
                 </div>
-                <div id="label-container"></div>
+                <br>
+                <div id="label-container" class="h1" margin-left="130px"></div>
         </div>
     </main>
+
+    <style>
+        
+    </style>
+    
     <div class="area">
         <ul class="circles">
             <li></li>
@@ -473,7 +481,7 @@
     
             // Get the randomly chosen prediction
             const chosenPrediction = prediction[randomIndex];
-            const classPrediction = chosenPrediction.className + ": " + (chosenPrediction.probability * 100).toFixed(2) + "%";
+            const classPrediction = '\xa0\xa0\xa0' + chosenPrediction.className + ": " + (chosenPrediction.probability * 100).toFixed(2) + "%";
             labelContainer.childNodes[0].innerHTML = classPrediction;
 
             if(chosenPrediction.probability *100 >= 85){
