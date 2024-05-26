@@ -484,7 +484,7 @@
             const classPrediction = '\xa0\xa0\xa0' + chosenPrediction.className + ": " + (chosenPrediction.probability * 100).toFixed(2) + "%";
             labelContainer.childNodes[0].innerHTML = classPrediction;
 
-            if(chosenPrediction.probability *100 >= 85){
+            if(chosenPrediction.probability *100 >= 50){
         
                 //location.replace('https://www.google.com/')
                 window.location.href = './Win.html';
